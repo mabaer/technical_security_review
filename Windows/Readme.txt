@@ -5,6 +5,7 @@ Running the output script (windows_security.ps1) will create a folder containing
 Output files:
 0. General
     1.      Execution Policy
+    2.      Whoami
     
 1. Network Information
     1.      RDP Configuration

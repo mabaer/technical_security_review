@@ -5,6 +5,7 @@ Running the output script (mssql_security.ps1) will create a folder containing t
 Output files:
 0. General
     1.      Execution Policy
+    2.      Whoami
     
 1. Database information
     1.      Version

@@ -1,4 +1,7 @@
-# Variables for 
+# Ignore Errors
+$ErrorActionPreference = 'SilentlyContinue'
+
+# Variables 
 $name = $env:computername
 $date = Get-Date -UFormat "%Y_%m_%d"
 $outputDir = "$date-$name"
@@ -15,5 +18,8 @@ exit
 Write-Host "Create new directory for output"
 new-item -Name $outputDir -ItemType directory
 
-# Get all powershell execution policies for the current session 
+# 00_01 Get all powershell execution policies for the current session 
 Get-ExecutionPolicy -List | Export-Csv -Path $PSScriptRoot"\"$outputDir"\00_01-"$outputDir"-Execution_Policy.csv"
+
+# 00_02 Whoami
+whoami | Export-Csv -Path $PSScriptRoot"\"$outputDir"\00_02-"$outputDir"-whoami.csv"
