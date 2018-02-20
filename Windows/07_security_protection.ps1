@@ -15,3 +15,4 @@ $AntiVirusProduct | Export-Csv -Path $PSScriptRoot"\"$outputDir"\07_01-"$outputD
 
 # 07_02 Firewall Settings
 Get-NetFirewallProfile | Export-Csv -Path $PSScriptRoot"\"$outputDir"\07_02-"$outputDir"-Firewall.csv"
+Get-NetFirewallSetting | Export-Csv -Path $PSScriptRoot"\"$outputDir"\07_02-"$outputDir"-Firewall_Settings.csv"
