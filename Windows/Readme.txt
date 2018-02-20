@@ -6,18 +6,21 @@ Output files:
 0. General
     1.      Execution Policy
     2.      Whoami
+    3.      PowerShell Version
     
 1. Network Information
     1.      RDP Configuration
     2.      Network shares (including privileges)
     3.      Established network connections
     4.      Network services (including port and executing user)
+    5.      TCP and UDP Settings
 
 2. System information
     1.      Sysinfo
     2.      Domain information
     3.      Administrator account renamed
     4.      Guest account disabled
+    5.      Storage Information
 
 3. Local user information
     1.      List of local users
@@ -34,6 +37,7 @@ Output files:
 5. Installed Software
     1.      OS patch
     2.      List of installed application (including version)
+    3.      Security Patches within last 90 Days
 
 6. Policies
     1.      Account policies
@@ -47,3 +51,6 @@ Output files:
     1.      Screensaver protection
     2.      System resume protection
     3.      Elements within PATH
+    4.      Secure Boot
+    5.      Connected Devices
+    6.      Expiring Certificates

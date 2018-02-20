@@ -23,3 +23,6 @@ Get-ExecutionPolicy -List | Export-Csv -Path $PSScriptRoot"\"$outputDir"\00_01-"
 
 # 00_02 Whoami
 whoami | Export-Csv -Path $PSScriptRoot"\"$outputDir"\00_02-"$outputDir"-whoami.csv"
+
+# 00_03 PowerShell Version
+$PSVersionTable.PSVersion  | Export-Csv -Path $PSScriptRoot"\"$outputDir"\00_03-"$outputDir"-PSVersion.csv"
