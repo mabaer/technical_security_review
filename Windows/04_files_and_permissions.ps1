@@ -1,5 +1,8 @@
 
 # 04_01 File Permissions 
+$drive = [system.environment]::getenvironmentvariable("SystemDrive")
+$rootDir = -join($drive, "\")
+Get-ChildItem $rootDir -recurse | get-acl | select * | FT | Export-Csv -Path $PSScriptRoot"\"$outputDir"\04_01-"$outputDir"-File_Permissions.csv" 
 
 # 04_02 Running Processes
 Get-Process | Export-Csv -Path $PSScriptRoot"\"$outputDir"\04_02-"$outputDir"-Running_Processes.csv"
