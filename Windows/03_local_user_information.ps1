@@ -1,6 +1,6 @@
 
 # 03_01 Local Users
-Get-WmiObject -Class Win32_UserAccount -Filter  "LocalAccount='True'" | Select * | FT –AutoSize | Export-Csv -Path $PSScriptRoot"\"$outputDir"\03_01-"$outputDir"-Local_User.csv"
+Get-WmiObject -Class Win32_UserAccount -Filter  "LocalAccount='True'" | Select * | Export-Csv -Path $PSScriptRoot"\"$outputDir"\03_01-"$outputDir"-Local_User.csv"
 
 # 03_02 Local Groups
 Get-WMIObject win32_group -filter "LocalAccount='True'" | Select * | Export-Csv -Path $PSScriptRoot"\"$outputDir"\03_02-"$outputDir"-Local_Groups.csv"
